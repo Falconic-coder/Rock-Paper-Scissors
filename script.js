@@ -42,13 +42,13 @@ function playGame(choice){
         if((humanChoice == 'r' && CompChoice == 's') || (humanChoice == 'p' && CompChoice == 'r') || (humanChoice == 's' && CompChoice == 'p'))
         {
             HSCore++;
-            document.getElementById("HCount").innerHTML = "Count : "+HSCore;
+            document.getElementById("HCount").innerHTML = "Score : "+HSCore;
         } 
 
         else
         {
             CScore++;
-            document.getElementById("CCount").innerHTML = "Count : "+CScore;
+            document.getElementById("CCount").innerHTML = "Score : "+CScore;
         }
     }
 
