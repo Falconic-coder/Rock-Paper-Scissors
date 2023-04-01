@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+
+        <div class="heading">
+            <h1>Rock, Paper and Scissors</h1>
+        </div>
+    
+        <div class="cards">
+            <div class="human">
+
+                <div class="gameHeading" style="height: 85px;">
+                    <h3>Human</h3>
+                </div>
+
+
+                <div class="HScore">
+                    <div>
+                        <img src="Icons\boy.png" alt="boy">
+                    </div>
+                    
+                    <h5 id="HCount">Count : 0</h5>
+                </div>
+
+
+                <div class="IconRPS" id="RPS">
+
+                    <div class="rock" onclick="playGame('rock')">
+                        <button>
+                            <img src="Icons\stone.png" id="rock">
+                        </button>
+                    </div>
+
+                    <div class="paper" onclick="playGame('paper')"> 
+                        <button>
+                            <img src="Icons\paper.png" id="paper">
+                        </button>
+                    </div>
+
+                    <div class="scissor" onclick="playGame('scissor')">
+                        <button>
+                            <img src="Icons\scissor.png" id="scissor">
+                        </button>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="computer">
+                <div class="gameHeading" style="height: 85px;">
+                    <h3>Computer</h3>
+                </div>
+
+                <div class="CScore">
+                    <div>
+                        <img src="Icons\desktop.png" alt="computer">
+                    </div>
+                    <h5 id="CCount">Count : 0</h5>
+                </div>
+
+                <div class="IconRPS">
+
+                    <div class="rock">
+                        <button>
+                            <img src="Icons\stone.png">
+                        </button>
+                    </div>
+
+                    <div class="paper">
+                        <button>
+                            <img src="Icons\paper.png">
+                        </button>
+                    </div>
+
+                    <div class="scissor">
+                        <button> 
+                            <img src="Icons\scissor.png">
+                        </button>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
