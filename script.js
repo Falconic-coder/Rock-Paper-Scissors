@@ -60,7 +60,6 @@ function playGame(choice){
 
     rounds++;
     winner();
-    console.log({HSCore, CScore, CompChoice, humanChoice});
 }
 
 
@@ -82,17 +81,16 @@ function winner(){
             document.querySelector(".cards>.human").style.border = "solid rgb(179, 179, 255) 3px";
         }
             
-        else
+        
+        if(CScore > HSCore)
         {
-            if(CScore > HSCore)
-            {
-                message("Game Ends! Computer Wins this Game. ");
-                document.querySelector(".cards>.computer").style.border = "solid rgb(243, 84, 84) 3px";
-            }
-
-            else
-                message("Game Ends! It's a tie. ");
+            message("Game Ends! Computer Wins this Game. ");
+            document.querySelector(".cards>.computer").style.border = "solid rgb(243, 84, 84) 3px";
         }
+
+        if(CScore == HSCore)
+            message("Game Ends! It's a tie. ");
+        
     }
 }
 
