@@ -91,7 +91,7 @@ function winner(){
             }
 
             else
-                message("Game Ends! Computer Wins this Game. ");
+                message("Game Ends! It's a tie. ");
         }
     }
 }
